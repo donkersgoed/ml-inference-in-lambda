@@ -70,7 +70,7 @@ def handler(event, _context):  # # pylint: disable=too-many-locals
     time3 = time.time()
     print(f"[TIMING] Resized image in {time3 - time2:.2f}s")
 
-    # model is asychronous and not actually called here
+    # model is loaded asynchronously and not called here
     box_ids, scores, bboxes = model(transformed_img)
 
     utils.viz.plot_bbox(  # plot results in inference
