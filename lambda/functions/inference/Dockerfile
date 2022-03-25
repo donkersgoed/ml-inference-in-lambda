@@ -10,5 +10,5 @@ RUN  yum install libgomp libquadmath -y
 # Copy function code
 COPY main.py ${LAMBDA_TASK_ROOT}
 
-# Set the CMD to your handler (could also be done as a parameter override outside of the Dockerfile)
+# Set the CMD to your handler
 CMD [ "main.handler" ]
