@@ -15,6 +15,9 @@ setuptools.setup(
     package_dir={"": "ml_inference_in_lambda"},
     packages=setuptools.find_packages(where="ml_inference_in_lambda"),
     install_requires=[
+        "aws-cdk.aws-lambda==1.149.0",
+        "aws-cdk.aws-events==1.149.0",
+        "aws-cdk.aws-events-targets==1.149.0",
         "aws-cdk.core==1.149.0",
         "black==21.6b0",
         "pylint==2.10.2",
